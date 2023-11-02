@@ -1,0 +1,533 @@
+
+<html lang="en">
+
+<!DOCTYPE html>
+<head>
+
+<title> Testing </title>
+
+<style type="text/css">figure {margin: 0;}</style>
+<link rel="shortcut icon" href="http://41.media.tumblr.com/0d9e4adc031b003bf7dc068f69517165/tumblr_n6mbhccXiw1spx7t1o1_100.png">
+
+<link href="//fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+
+
+/*scrollbar*/
+
+::-webkit-scrollbar{
+    height:2px;
+    width:4px;
+    background:inherit;
+}
+
+::-webkit-scrollbar-thumb {
+    background:#f7dfd9;
+    border-radius:2px;
+    -webkit-border-radius:2px;
+}
+
+.same::-webkit-scrollbar {width:1px;}
+
+.same::-webkit-scrollbar-thumb {background:#eeeeee!important;}
+
+/*basics*/
+
+body {
+    background:#dcdeff;
+    color:#8c8b8b;
+    font-family:karla,arial,sans-serif;
+    font-size:10px;
+    font-weight:normal;
+    -webkit-font-smoothing:antialiased;
+    -moz-font-smoothing:antialiased;
+    font-smoothing:antialiased;    
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.005);      
+    position:relative;
+    word-wrap:break-word;
+    text-align: left;
+    margin:0;
+    line-height:1.75em;
+}
+
+*, body {cursor: url(https://lh3.googleusercontent.com/blogger_img_proxy/ALY8t1v2MYHksF7xR1X-ndIzhH-EVab5RfaJdCCrUJYibTeAri8bAUGnMJWuCiaamxdAa_h95AfHvuF-SMM7fqJhhrcuvK6ZD9aqWWq9tS1FNYEpNpkMIn8jftyfSU7TWOw=s0-d), progress;}
+
+/*link*/
+a { 
+    color:#a2a2a2;
+    text-decoration:none;
+    cursor: url(https://lh3.googleusercontent.com/blogger_img_proxy/ALY8t1scVAjn23I6bnIK40ucDgu2ApKSNe_g7pLZ_Pm9RcF0iOPINB3HDv7C3ZQv3wDd20XUUCxzmFVRJak3_ktIceo8zfyTHq01mwvEaEslqZnNvlpUT0KUog=s0-d), progress;
+}
+ 
+    transition:all .4s ease-in-out;
+    -webkit-transition:all .4s ease-in-out;
+    -moz-transition:all .4s ease-in-out;
+    -o-transition:all .4s ease-in-out;      
+}
+
+a:hover {
+    color:#797979;
+    border-color:#797979!important;
+    cursor: url(https://lh3.googleusercontent.com/blogger_img_proxy/ALY8t1scVAjn23I6bnIK40ucDgu2ApKSNe_g7pLZ_Pm9RcF0iOPINB3HDv7C3ZQv3wDd20XUUCxzmFVRJak3_ktIceo8zfyTHq01mwvEaEslqZnNvlpUT0KUog=s0-d), progress;
+}
+
+}
+
+.caption a, .tex a, .a a, .title a {border-bottom:1px solid #eeeeee;}
+
+img {
+    opacity:1;
+    border:none;
+    text-decoration:none;
+}
+
+blockquote {
+    border-left:1px solid #eeeeee;
+    padding:.25em 0 .25em 15px;
+    margin:.5em 0;
+}
+
+pre {
+    padding:0;
+    margin:0;
+    line-height:inherit!important;
+    background:transparent;
+    font-family:inherit!Important;
+    font-size:inherit!important;
+    white-space:pre-wrap;
+    white-space:-moz-pre-wrap; 
+    white-space:-pre-wrap;
+    white-space:-o-pre-wrap; 
+    word-wrap:break-word;
+}
+
+p {margin:.75em 0;}
+
+p:first-of-type {margin-top:0;}
+
+p:last-of-type {margin-bottom:0;}
+
+b, strong {color:#6d6d6d;}
+
+ol, ul {
+    list-style:none;
+    padding-left:15px;
+}
+
+li {
+    padding-left:15px;
+    position:relative;
+}
+
+li:before {
+    content:'\00BB';
+    position:Absolute;
+    left:0px;
+}
+
+small, big, sub, pre {
+    font-size:1em!important;
+    line-height:2em!important;
+    vertical-align:top!important;
+}
+
+h1, h2, h3, h4 {
+    font-size:1em;
+    margin:0;
+    padding:0;
+    color:#6d6d6d;
+    font-weight:bold;
+}
+
+hr {
+    border:none;
+    box-shadow:0;
+    margin:1em 0;
+    border-top:1px solid #eeeeee; 
+}
+
+.bigger hr {margin:15px 0;}
+
+/*side*/
+
+aside {
+    width:170px;
+    position:fixed;
+    top:200px;
+    left:50%;
+    margin-left:calc(-325px / 2 - 275px);
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 1.5s;     
+}
+
+#d {
+    padding:20px;
+    margin-bottom:15px;      
+    background:#ffffff;
+    border-bottom:1px solid #eeeeee;
+}    
+
+.tai {
+    font-size:1.6em;
+    font-weight:bold;
+    display:block;
+    color:#6d6d6d;
+}
+
+.sub {display:block;}
+
+nav {
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 2s;    
+    position:absolute;
+    transform:translate(0%,-100%);
+    -webkit-transform:translate(0%,-100%);
+    -o-transform:translate(0%,-100%);
+    -moz-transform:translate(0%,-100%);    
+    font-size:8px;
+    line-height:2em;
+    padding-bottom:15px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}    
+
+nav a {
+    margin-right:15px;
+    counter-increment:link;        
+    display:inline-block;
+}
+
+nav a:before {    
+    content:counter(link, decimal-leading-zero);
+    font-weight:bold;
+    color:#6d6d6d;
+    margin-right:15px;
+}
+
+/*pagination*/
+
+#pagination {
+
+    display:none;
+
+}
+
+footer a {
+    display:inline-block;
+    padding:2px 4px;
+    background:#ffffff;
+    border-bottom:1px solid #eeeeee;
+    margin:0 10px;
+}
+
+footer a:hover {border-color:#eeeeee!important;}
+
+footer {
+
+    
+    
+    text-align:center;
+    margin:0 auto 100px auto;
+    font-size:8px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    width:325px;
+}    
+
+#infscr-loading {display:none!important;}
+
+.nice {
+    position:fixed;
+    right:15px;
+    bottom:15px;
+    width:15px;
+    text-align:center;
+    padding:3px;
+    line-height:15px;
+    background:#ffffff;
+}
+
+/*posts*/
+
+#entries {
+    margin:200px auto;
+    margin:200px auto 0 auto;
+    position:relative;
+    width:calc(325px + 40px);
+}
+
+.posts {
+    width:500px;
+    padding:20px;
+    background:#ffffff;
+    border-bottom:1px solid #eeeeee;
+    vertical-align:top;
+    position:relative;
+    display:block;
+     
+    margin-bottom:100px;    
+         
+    -webkit-animation-name: fade-in;
+    -webkit-animation-duration: 2s;
+}
+
+.posts img {
+    height:auto;
+    max-width:325px;
+}
+
+.photo img {   
+    width:325px;
+    display:block;
+}
+ 
+.media {
+    display:block;  
+    position:relative;    
+}
+ 
+
+
+a.read_more {text-transform:lowercase;}
+
+/*text and captions*/
+
+.title {
+    color:#6d6d6d;
+    font-size:1.2em;
+    font-weight:500;    
+    line-height:1.5em;    
+}
+
+.title a {color:#6d6d6d;}
+
+.title a:hover {color:#797979;}
+
+.ted {margin-top:15px;}
+
+.quote {
+    padding:15px;
+    background:#fbfbfb;
+    margin-bottom:15px;
+}
+   
+.source {margin-left:15px;}
+
+.caption {margin:15px 0 0 0;}
+
+.inline *:not(a):not(ul):not(ol):not(li) {
+    margin:0;
+    padding:0;    
+    display:inline;
+}
+
+.inline blockquote:first-of-type {display:inline!important;}
+
+.inline p:first-of-type::after {content:' ';}
+
+.inline blockquote {
+    padding:0;
+    display:block;
+    border:0;
+}
+
+.inline blockquote p {display:block!important;}
+
+.inline p {
+    display:block!important;
+    margin:.5em 0!important;
+}
+
+.inline p:first-of-type {
+    display:inline!important;
+    margin:0!important;
+}
+
+.inline *::after:not(a):not(ul):not(ol):not(li) {content:' ';}
+
+.posts img, .posts li, .posts blockquote, .caption img {max-width:100%;}
+
+.caption *:last-child, .a *:last-child, .tex *:last-child {
+    margin-bottom:0!important;
+    padding-bottom:0!Important;
+} 
+
+
+
+/*permalink and notes*/
+
+#permalink {
+    margin-top:15px;
+    padding-top:15px;
+    border-top:1px solid #eeeeee;
+}
+
+#permalink span {display:block;}
+
+.when {
+    margin-top:15px;
+    padding-top:15px;
+    line-height:1.5em;
+    border-top:1px solid #eeeeee;
+    font-size:8px;
+    position:relative;
+    text-transform:uppercase;
+    letter-spacing:1px;    
+}
+
+.when a {display:inline-block;}
+
+.when .rest {
+    float:right;
+    display:inline-block;
+    text-align:right;
+}
+
+.tt {
+    display:none;
+    position:relative;
+    top:calc(100% + 15px);
+}    
+
+.pagenotes {
+    text-transform:lowercase;
+    margin-top:100px;
+}
+
+.pagenotes .title {
+    margin-bottom:15px;
+    padding:15px;
+    background:#fbfbfb;
+}
+
+.same {
+    max-height:300px;
+    overflow:auto;
+}
+
+.same li:before {display:none;}
+
+ol.notes {
+    list-style-type:none; 
+    padding:0px;
+    margin:0px;
+}
+
+ol.notes li.note {
+    display:block;
+    padding-left:0;
+}
+
+ol.notes li.note img.avatar {display:none!important;}
+
+.more_notes_link,.notes_loading {
+    display:block;
+    text-align:left!important;
+    color:#6d6d6d;
+}
+
+/*links*/
+
+.le {
+    position:relative;
+    width:325px;  
+}
+
+.rest {
+    margin-left:60px;
+    display:block;
+}
+
+.le a, .lo {
+    display:inline-block;
+    font-size:8px;
+    text-transform:uppercase;
+    letter-spacing:1px;      
+}
+
+.le a {width:calc((325px - 60px) / 3)!important;}
+
+.lo {
+    color:#6d6d6d;
+    width:60px;
+    float:left;
+    font-weight:bold;
+    position:relative;
+}
+
+.bigger a, .bigger a:hover {border:0!important;}
+
+.bigger a:before {display:none;}
+
+
+
+</style>
+</head>
+
+
+<body>
+
+<!--Theeeeeee thing by the side idk whats it called but its the tiny box on the side used to be a bio place starts -->
+<aside><div id="d">
+
+<a  imageanchor="1"><img border="0" height="95" src="https://2.bp.blogspot.com/-kM6n9Pjh_eM/VvztQt9s0II/AAAAAAAAAV8/3hQJA8rqwUgI5VlxZ6fq9ej43cUxif7iQ/s1600/4.png" width="140"></a>
+
+<center> Beep boop beep boop  </center> </div><span class="sub"></span>
+</aside>
+
+<!--Theeeeeee thing by the side idk whats it called but its the tiny box on the side used to be a bio place ends -->
+
+<section id="entries"> <!-- this is where the posts used to be-->
+<nav><a href="http://ohaimi.blogspot.com/">index</a><a class="link" href="javascript:void(0);" onclick="window.open('http://zambo-zell.cbox.ws/','ratting','width=400,height=550')">Message</a><a href="javascript:void(0);" onclick="window.open('http://www.blogger.com/follow-blog.g?blogID=4670353367271220254','ratting','width=600,height=550')">follow</a>
+</nav> <!-- navigations-->
+
+<article class="posts">
+
+
+
+
+<div class="title"><small><Center>Title should be here </small></center>
+</div>
+<div class="tex ted"><div style="clear:both;"></div><div class="separator" style="clear: both; text-align: center;">
+<a imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="310" src="https://1.bp.blogspot.com/-t6WtQVu3EB8/VvztQqYmBKI/AAAAAAAAAWA/k1sfOQcwUHwt0JE5vhorEJizDbX0f9y4g/s400/3.png" width="400" /></a></div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<div class="separator" style="clear: both; text-align: center;">
+</div>
+<br />
+<div style="text-align: justify;">
+&nbsp; &nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Metus aliquam eleifend mi in nulla. Lacus viverra vitae congue eu. 
+Vitae suscipit tellus mauris a diam maecenas. 
+Maecenas sed enim ut sem viverra aliquet eget sit amet. 
+Sit amet mauris commodo quis. 
+Nunc mattis enim ut tellus elementum sagittis vitae et. 
+Ullamcorper a lacus vestibulum sed. 
+Facilisis leo vel fringilla est ullamcorper eget nulla facilisi. 
+Nunc non blandit massa enim. 
+Dui vivamus arcu felis bibendum ut tristique et egestas. Porta lorem mollis aliquam ut porttitor leo a diam sollicitudin. 
+<blockquote>Habitant morbi tristique senectus et netus et malesuada. </blockquote>
+</div>
+</div><br/>
+<div style="clear:both; padding-bottom:0.25em"></div><p>Labels: <a rel='tag' href="http://ohaimi.blogspot.com/search/label/and%20i%20am%20too%20lazy%20to%20proof%20read">link 1 for labels dont click it pls </a>, <a rel='tag' href="http://ohaimi.blogspot.com/search/label/if%20you%20notice%20please%20tell%20me%20so%20that%20I%20would%20never%20make%20those%20mistakes%20again">link 2 of whatever label there is </a>, <a rel='tag' href="http://ohaimi.blogspot.com/search/label/sorry%20for%20the%20incorrect%20spelling%20or%20grammar">link 3 of labels</a></p></div>
+
+
+<div class="when"><span class="rest"><a href="https://www.blogger.com/comment.g?blogID=4670353367271220254&amp;postID=1181829668444792335&amp;isPopup=true" onclick="window.open('https://www.blogger.com/comment.g?blogID=4670353367271220254&postID=1181829668444792335&isPopup=true', 'bloggerPopup', 'toolbar=0,scrollbars=1,location=0,statusbar=1,menubar=0,resizable=1,width=400,height=450');return false;">1 Notes</a></BlogItemCommentsEnabled>
+<br></span><script> document.write(new Date().toDateString()); </script></div>
+
+
+</article>
+
+
+
+
+
+</section>
+
+
+
+</body></html>
